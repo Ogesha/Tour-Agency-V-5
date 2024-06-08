@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты - Туристическое агентство</title>
+    <meta name="description" content="Контакты туристического агентства. Свяжитесь с нами через форму обратной связи или по указанным контактам.">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Контакты</h1>
+        <nav>
+            <ul>
+                <li><a href="travel agency main.html">Главная</a></li>
+                <li><a href="travel agency catalog.html">Услуги</a></li>
+                <li><a href="travel agency reg.html">Регистрация</a></li>
+                <li><a href="travel agency login.html">Вход</a></li>
+                <li><a href="travel agency contact.html">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Наши контакты</h2>
+            <p>Адрес: ул. Примерная, д. 1, Москва, Россия</p>
+            <p>Телефон: +7 (123) 456-78-90</p>
+            <p>Email: info@touragency.ru</p>
+        </section>
+        <section>
+            <h2>Форма обратной связи</h2>
+            <form action="contact_process.php" method="post">
+                <fieldset>
+                    <legend>Свяжитесь с нами</legend>
+                    <label for="name">Имя:</label>
+                    <input type="text" id="name" name="name" required><br>
+                    <label for="email">Электронная почта:</label>
+                    <input type="email" id="email" name="email" required><br>
+                    <label for="message">Сообщение:</label><br>
+                    <textarea id="message" name="message" rows="4" required></textarea><br>
+                    <input type="submit" value="Отправить">
+                </fieldset>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Туристическое агентство. Все права защищены.</p>
+    </footer>
+</body>
+</html>

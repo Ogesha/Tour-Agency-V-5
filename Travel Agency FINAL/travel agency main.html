@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Туристическое агентство - Главная</title>
+    <meta name="description" content="Туристическое агентство предлагает туры, бронирование отелей, аренду автомобилей и многое другое. Путешествуйте с нами!">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/styles2.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Туристическое агентство</h1>
+        <nav>
+            <ul>
+                <li><a href="travel agency main.html">Главная</a></li>
+                <li><a href="travel agency catalog.html">Услуги</a></li>
+                <li><a href="travel agency reg.html">Регистрация</a></li>
+                <li><a href="travel agency login.html">Вход</a></li>
+                <li><a href="travel agency contact.html">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Добро пожаловать в наше туристическое агентство!</h2>
+            <p>Мы предлагаем разнообразные туристические услуги, включая туры, бронирование отелей, аренду автомобилей и многое другое.</p>
+            <h3>Наши услуги</h3>
+            <ul>
+                <li>Туры по всему миру</li>
+                <li>Бронирование отелей</li>
+                <li>Аренда автомобилей</li>
+                <li>Круизы</li>
+                <li>Экскурсии</li>
+                <li>Туристические страховки</li>
+            </ul>
+            <button id="faq-button">FAQ</button>
+        </section>
+        <section>
+            <h3>Пример вложенного списка</h3>
+            <div id="tree">
+                1. Мы ничего не предоставляем
+                2. Мы берем деньги просто так
+                3. Вы хотите отправить нам ваши деньги
+                4. Никакие права не защищены
+            </div>
+        </section>
+        <section>
+            <h3>Комментарии</h3>
+            <div id="comments"></div>
+            <form id="comment-form">
+                <input type="text" id="comment-name" placeholder="Ваше имя" required>
+                <textarea id="comment-body" placeholder="Ваш комментарий" required></textarea>
+                <button type="submit">Отправить</button>
+            </form>
+        </section>
+    </main>
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span class="close" onclick="closePopup()">&times;</span>
+            <p>"Сайт" сделан в ознакомительных целях и для выполнения 3 лабораторной, автору все равно на все права. Если кто-то имеет что-то против - мне пофиг.</p>
+        </div>
+    </div>
+
+    <div class="gallery">
+        <img src="img1.jpg" alt="Image 1" class="gallery-item">
+        <img src="img2.jpg" alt="Image 2" class="gallery-item">
+        <img src="img3.jpg" alt="Image 3" class="gallery-item">
+    </div>
+
+    <div id="modal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modal-image">
+        <div id="caption"></div>
+    </div>
+
+    <div id="notification-container"></div>
+    
+    <footer>
+        <p>&copy; 2024 Туристическое агентство. Все права защищены.</p>
+    </footer>
+    <script src="js/scripts2.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+</html>

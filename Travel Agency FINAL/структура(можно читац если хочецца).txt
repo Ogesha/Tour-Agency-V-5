@@ -1,0 +1,11 @@
+tour-agency/
+├── travel agency main.html
+├── travel agency reg.html
+├── travel agency login.html
+├── travel agency contact.html
+├── travel agency catalog.html
+├── css/
+│   ├── normalize.css
+│   └── styles.css
+├── js/
+│   └── scripts.js
